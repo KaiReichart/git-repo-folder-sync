@@ -1,0 +1,9 @@
+dependencies:
+  - url: https://github.com/yourusername/repo1.git
+    subdirectory: docs
+    ref: main
+    target: docs/postgres
+  - url: https://github.com/yourusername/repo2.git
+    subdirectory: docs
+    ref: main
+    target: docs/kafka
