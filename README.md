@@ -7,9 +7,7 @@ The Git Repo Sync CLI is a command-line tool that allows you to load Git reposit
 Before using the Git Repo Sync CLI, ensure you have Python 3.x installed on your system. You can then install the required Python packages using pip:
 
 ```bash
-
 pip install -r requirements.txt
-
 ```
 
 ## Usage
@@ -19,7 +17,6 @@ To use the Git Repo Sync CLI, follow these steps:
 1. Create a YAML file (git_folder_dep.yaml) specifying the Git repositories and their details. Here is an example:
 
 ```yaml
-
 dependencies:
   - url: https://github.com/yourusername/repo1.git
     subdirectory: src
@@ -65,6 +62,14 @@ You can customize the behavior of the Git Repo Sync CLI by editing the git_folde
 - subdirectory: The subdirectory within the repository to synchronize.
 - ref: The Git branch, tag, or commit reference to checkout.
 - target: The local target folder where the repository will be synchronized.
+
+## Concept
+
+You can find more documentation about [the concept here](./docs/concept.md).
+
+## Further Automation
+
+This tool is built with further automation in mind. An example configuration and documentation for integration with RenovateBot can be found [here](./docs/renovate.md).
 
 ## License
 
